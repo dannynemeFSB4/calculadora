@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My First Calculator</title>
+</head>
+<body>
+    <h1>CALCULATOR</h1>
+    <br>
+    <input id="numeroA">NUMBER A</input>
+    <br>
+    <br>
+    <input id="numeroB">NUMBER B</input>
+    <br>
+    <br>
+    <button id="suma" onclick="suma()">SUM (+)</button>
+    <button id="resta" onclick="resta()">SUBT (-)</button>
+    <button id="multiplicacion" onclick="multiplicacion()">MULT (*)</button>
+    <button id="division" onclick="division()">DIV (/)</button>
+
+    <h1>OUTPUT:</h1><input id="resultadoOperacion"></input>
+
+    <script>
+        console.log("Ejecutando código Javascript!!!")
+
+        // esta funcion ejecuta la suma
+
+        function suma(){
+            console.log("Ejecutando suma");
+
+            const valorA = document.getElementById("numeroA").value;
+            const valorB = document.getElementById("numeroB").value;
+
+            console.log("Valor A =>", valorA);
+            console.log("Valor B =>", valorB);
+
+            const resultado = Number(valorA) + Number(valorB)
+            console.log("Resultado =>", resultado)
+
+            let campoResultado = document.getElementById("resultadoOperacion")
+
+            campoResultado.value = resultado
+
+        }
+
+        // esta funcion ejecuta la resta
+
+        function resta(){
+            console.log("Ejecutando resta");
+
+            const valorA = document.getElementById("numeroA").value;
+            const valorB = document.getElementById("numeroB").value;
+
+            console.log("Valor A =>", valorA);
+            console.log("Valor B =>", valorB);
+
+            const resultado = Number(valorA) - Number(valorB)
+            console.log("Resultado =>", resultado)
+
+            let campoResultado = document.getElementById("resultadoOperacion")
+
+            campoResultado.value = resultado
+
+        }
+
+        // esta funcion ejecuta la multiplicacion
+
+        function multiplicacion(){
+            console.log("Ejecutando multiplicación");
+
+            const valorA = document.getElementById("numeroA").value;
+            const valorB = document.getElementById("numeroB").value;
+
+            console.log("Valor A =>", valorA);
+            console.log("Valor B =>", valorB);
+
+            const resultado = Number(valorA) * Number(valorB)
+            console.log("Resultado =>", resultado)
+
+            let campoResultado = document.getElementById("resultadoOperacion")
+
+            campoResultado.value = resultado
+
+        }
+
+        // esta funcion ejecuta la division
+
+        function division(){
+            console.log("Ejecutando división");
+
+            const valorA = document.getElementById("numeroA").value;
+            const valorB = document.getElementById("numeroB").value;
+
+            console.log("Valor A =>", valorA);
+            console.log("Valor B =>", valorB);
+
+            const resultado = Number(valorA) / Number(valorB)
+            console.log("Resultado =>", resultado)
+
+            let campoResultado = document.getElementById("resultadoOperacion")
+
+            campoResultado.value = resultado
+
+        }
+
+    </script>
+
+    
+</body>
+</html>
